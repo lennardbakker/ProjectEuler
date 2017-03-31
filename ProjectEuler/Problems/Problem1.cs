@@ -10,20 +10,22 @@ namespace ProjectEuler
     {
         public Problem1()
         {
-            var _below = 1000;
-            var sum = 0;
-            for(int i = 1; i < _below; i++)
+            var _limit = 1000;
+            var _sum = 0;
+
+            //We loop till we have reached the limit, if 'i' is not a multiple of 3 OR 5 the 'i' doesn't get added to the sum
+            for(int i = 1; i < _limit; i++)
             {
                 if (i % 3 == 0)
                 {
-                    sum += i;
+                    _sum += i;
                 }
                 else if (i % 5 == 0)
                 {
-                    sum += i;
+                    _sum += i;
                 }
             }
-            Console.WriteLine(sum);
+            Console.WriteLine(_sum);
             Console.ReadKey();
         }
     }
