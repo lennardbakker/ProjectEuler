@@ -22,34 +22,8 @@ namespace ProjectEuler.Problems
                     //Then print sum and break;
                 }
             }
-
-            //vv previous attempt
-            //var _top = (999 * 999) + 1;
-            //var _biggestPalindrome = 0;
-
-            //while (_top > 0)
-            //{
-            //    var _reverse = 0;
-            //    var _num = _top;
-
-            //    while (_num > 0)
-            //    {
-            //        var dig = _num % 10;
-            //        _reverse = (_reverse * 10) + dig;
-            //        _num = _num / 10;
-            //    }
-
-            //    if (_num == _reverse)
-            //    {
-            //        _biggestPalindrome = _top;
-            //        Console.WriteLine("Biggest Palindrome : " + _biggestPalindrome);
-            //        break;
-            //    }
-
-            //    _top--;
-            //}
-
-            //Console.ReadKey();
+           
+            Console.ReadKey();
         }
     }
 }
