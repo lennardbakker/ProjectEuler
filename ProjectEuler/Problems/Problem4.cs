@@ -15,6 +15,8 @@ namespace ProjectEuler.Problems
             var _threeDigitRange = 999;
             var _highestFound = 0;
 
+            //Loop from _threeDigitRange to _firstProduct, within this loop loop from _threeDigitRange to _secondProduct
+            //Check if the sum is a palindrome and the sum must be higher then the _highestFound palindrome, if so then set it as the _highestFound palindrome within the loop
             for (int i = _threeDigitRange; i >= _firstProduct; i--)
             {
                 for (int j = _threeDigitRange; j >= _secondProduct; j--)
@@ -33,6 +35,10 @@ namespace ProjectEuler.Problems
             Console.ReadKey();
         }
 
+        //By using the Substring method on the given parameter copy the first half of the string
+        //Make the string given as parameter a char array, then reverse the array
+        //Copy the first half of the reverted string
+        //Return true if _first equals _second
         public bool isPalindrome(string myString)
         {
             string _first = myString.Substring(0, myString.Length / 2);
