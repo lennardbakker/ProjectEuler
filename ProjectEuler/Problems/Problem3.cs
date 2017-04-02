@@ -11,6 +11,14 @@ namespace ProjectEuler.Problems
         public Problem3()
         {
             //init
+
+            var _number = 600851475143;
+            var _largestPrimeFactor = 0;
+
+            //Method: Pollard's rho algorithm
+
+
+            Console.ReadKey();
         }
     }
 }
